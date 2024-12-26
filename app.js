@@ -3,7 +3,7 @@ import config from "config";
 import "./utils/dbConnect.js";
 import userRouter from "./controllers/users/index.js";
 import adminRouter from "./controllers/admins/index.js";
-import blogRoter from "./controllers/blogs/index.js";
+import blogRouter from "./controllers/blogs/index.js";
 
 const app = express();
 app.use(express.json());
@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/users", userRouter);
 app.use("/api/admins", adminRouter);
-app.use("/api/blogs", blogRoter);
+app.use("/api/blogs", blogRouter);
 
 app.listen(PORT, () => {
   console.log(`Server running at ${PORT}`);
