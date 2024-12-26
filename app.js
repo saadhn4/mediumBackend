@@ -11,7 +11,7 @@ const PORT = config.get("PORT");
 
 app.get("/", (req, res) => {
   try {
-    res.status(200).json({ msg: "Hello world!ssss" });
+    res.status(200).json({ msg: "Hello world!" });
   } catch (error) {
     console.log(error);
     res.status(500).json({ msg: error });
