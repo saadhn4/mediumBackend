@@ -4,6 +4,7 @@ import "./utils/dbConnect.js";
 import userRouter from "./controllers/users/index.js";
 import adminRouter from "./controllers/admins/index.js";
 import blogRouter from "./controllers/blogs/index.js";
+import publicRouter from "./controllers/public/index.js";
 
 const app = express();
 app.use(express.json());
@@ -18,6 +19,7 @@ app.get("/", (req, res) => {
   }
 });
 
+app.use("/api/public", publicRouter);
 app.use("/api/users", userRouter);
 app.use("/api/admins", adminRouter);
 app.use("/api/blogs", blogRouter);

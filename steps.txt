@@ -1,0 +1,26 @@
+I will be implementing these topics in the code: 
+
+1. jwt auth middleware
+2. public and priv routes
+3. email verify , phone verify
+4. express projects
+
+Authentication methods:
+
+1. Using JWT Authentication
+2. Using session based storage
+
+Always divide your API's into 2 types.
+
+1. public
+2. private
+
+Public API's - they dont require authentication
+ex: register, login, forgot password
+
+Private APIs - Which require authentication
+example: username, email and password should be authenticated
+apis like get my profile, get all posts, update my profile, delete my profile, delete all posts(basically all crud operations of a role)
+
+survivor_awais key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVja0R1cGxpY2F0ZSI6bnVsbCwiaWF0IjoxNzM1MjAwOTA0LCJleHAiOjE3MzUyODczMDR9.j6uztKvgcLvpvb37DcM7VY-MMbCaOIHaMkH6Lxc1IRc
+
